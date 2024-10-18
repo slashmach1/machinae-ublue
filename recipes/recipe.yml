@@ -14,11 +14,11 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-      - source: files/usr/lib
+      - source: usr/lib
         destination: /usr/lib/
-      - source: files/scripts/hp-set-lighting
+      - source: scripts/hp-set-lighting
         destination: /usr/bin/hp-set-lighting
-      - source: files/scripts/steam_dev.cfg
+      - source: scripts/steam_dev.cfg
         destination: /root/steam_dev.cfg
 
   - type: rpm-ostree
