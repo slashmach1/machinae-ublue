@@ -1,0 +1,10 @@
+#!/bin/bash
+KVER=$(uname -r)
+rmmod hp-wmi
+insmod /lib/modules/$KVER/extra/hp-wmi/hp-wmi.ko.xz
+echo 00FFFF > /sys/devices/platform/hp-wmi/rgb_zones/zone00
+echo FF00FF > /sys/devices/platform/hp-wmi/rgb_zones/zone01
+echo 00FFFF > /sys/devices/platform/hp-wmi/rgb_zones/zone02
+echo FF00FF > /sys/devices/platform/hp-wmi/rgb_zones/zone03
+rmmod hp-wmi
+modprobe hp-wmi
