@@ -15,7 +15,7 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
       - source: usr/lib
-        destination: /usr/lib/
+        destination: /etc
       - source: scripts/hp-set-lighting
         destination: /usr/bin/hp-set-lighting
       - source: scripts/steam_dev.cfg
