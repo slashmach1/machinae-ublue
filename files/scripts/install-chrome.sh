@@ -17,6 +17,7 @@ mkdir -p /var/opt # -p just in case it exists
 mkdir -p /var/lib/alternatives
 
 # Setup repo
+rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm 
 cat << EOF > /etc/yum.repos.d/google-chrome.repo
 [google-chrome]
 name=google-chrome
@@ -34,6 +35,7 @@ rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-google
 
 # Now let's install the packages.
 rpm-ostree install google-chrome-stable
+rpm-ostree install ffmpeg gstreamer1-plugin-libav gstreamer1-plugins-bad-free-extras gstreamer1-plugins-bad-freeworld gstreamer1-plugins-ugly gstreamer1-vaapi libva-nvidia-driver intel-media-driver libva-intel-driver
 # Clean up the yum repo (updates are baked into new images)
 rm /etc/yum.repos.d/google-chrome.repo -f
 mv /var/opt/google /usr/lib/google # move this over here
