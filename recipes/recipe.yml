@@ -58,7 +58,6 @@ modules:
     install:
       - xone
       - xpadneo
-      - 
       
   - type: systemd
     system:      
