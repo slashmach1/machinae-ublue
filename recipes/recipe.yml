@@ -14,8 +14,6 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-      - source: rpms
-        destination: /usr/src/hp-wmi/
 
   - type: rpm-ostree
     repos:
@@ -35,6 +33,9 @@ modules:
       - steam-devices
       - android-tools
       - ffmpeg
+      - hp-wmi-0-0.10.x86_64.rpm
+      - akmod-hp-wmi-0-0.10.x86_64.rpm
+      - kmod-hp-wmi-0-0.10.x86_64.rpm
     remove:
       - fedora-workstation-repositories
       - firefox
