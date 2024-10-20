@@ -41,7 +41,6 @@ modules:
       - firefox
       - firefox-langpacks
       - wpa_supplicant
-      - ffmpeg-free
 
   - type: akmods
     base: main
