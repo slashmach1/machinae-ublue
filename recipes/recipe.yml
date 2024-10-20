@@ -19,6 +19,9 @@ modules:
     repos:
        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
+      - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+      - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+      - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - iwd
       - tailscale
       - wireguard-tools
@@ -27,20 +30,32 @@ modules:
       - distrobox
       - steam-devices
       - android-tools
+      - ffmpeg
+		  - gstreamer1-plugin-libav
+		  - gstreamer1-plugins-bad-free-extras
+		  - gstreamer1-plugins-bad-freeworld
+		  - gstreamer1-plugins-ugly
+		  - gstreamer1-vaapi
     remove:
       - fedora-workstation-repositories
       - firefox
       - firefox-langpacks
       - wpa_supplicant
+      - ffmpeg-free
+		  - libavcodec-free
+		  - libavdevice-free
+		  - libavfilter-free
+		  - libavformat-free
+		  - libavutil-free
+		  - libpostproc-free
+		  - libswresample-free
+		  - libswscale-free
 
   - type: akmods
     base: main
     install:
       - xone
       - xpadneo
-  - type: script
-    scripts:
-      - install-chrome.sh
       
   - type: systemd
     system:      
