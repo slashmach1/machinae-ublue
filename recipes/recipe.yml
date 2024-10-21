@@ -45,7 +45,7 @@ modules:
     system:      
       enabled: 
       - dconf-update
-      
+
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -66,5 +66,7 @@ modules:
       - com.discordapp.Discord
       - org.signal.Signal
       - com.google.AndroidStudio
+      - dev.zed.Zed
+      - app.devsuite.Ptyxis
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
