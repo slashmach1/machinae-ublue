@@ -40,6 +40,7 @@ modules:
       - android-tools
       - tmux
       - vim
+      - /tmp/rpms/kmods/kmod-hp-wmi*.rpm
     remove:
       - fedora-workstation-repositories
       - firefox
