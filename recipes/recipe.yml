@@ -19,7 +19,7 @@ modules:
 
   - type: containerfile
     containerfiles:
-      - Containerfile
+      - akmods
       
   - type: rpm-ostree
     repos:
