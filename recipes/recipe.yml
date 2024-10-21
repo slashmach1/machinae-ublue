@@ -14,12 +14,21 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+      - source: rpm-ostree/hp-wmi
+        destination: /usr/src
 
+  - type: containerfile
+    containerfiles:
+      - Containerfile
+      
   - type: rpm-ostree
     repos:
        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
        - https://copr.fedorainfracloud.org/coprs/yohane-shiro/wallpaper-engine-kde-plugin-qt6/repo/fedora-40/yohane-shiro-wallpaper-engine-kde-plugin-qt6-fedora-40.repo
     install:
+      - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-40.noarch.rpm
+      - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-40.noarch.rpm
+      - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - wallpaper-engine-kde-plugin-qt6
       - iwd
       - tailscale
@@ -29,6 +38,8 @@ modules:
       - distrobox
       - steam-devices
       - android-tools
+      - tmux
+      - vim
     remove:
       - fedora-workstation-repositories
       - firefox
@@ -54,7 +65,6 @@ modules:
       repo-name: flathub
       repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-      - com.google.Chrome
       - com.bitwarden.desktop
       - net.cozic.joplin_desktop
       - org.cryptomator.Cryptomator
