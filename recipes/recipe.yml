@@ -16,6 +16,8 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
       - source: rpm-ostree/hp-wmi
         destination: /usr/src
+      - source: containerfiles
+        destination: /config
 
   - type: containerfile
     containerfiles:
