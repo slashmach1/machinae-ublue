@@ -14,23 +14,12 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-      - source: rpm-ostree/hp-wmi
-        destination: /usr/src
-      - source: containerfiles
-        destination: /config
-
-  - type: containerfile
-    containerfiles:
-      - akmods
       
   - type: rpm-ostree
     repos:
        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
        - https://copr.fedorainfracloud.org/coprs/yohane-shiro/wallpaper-engine-kde-plugin-qt6/repo/fedora-40/yohane-shiro-wallpaper-engine-kde-plugin-qt6-fedora-40.repo
     install:
-      - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-40.noarch.rpm
-      - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-40.noarch.rpm
-      - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - wallpaper-engine-kde-plugin-qt6
       - iwd
       - tailscale
@@ -42,7 +31,7 @@ modules:
       - android-tools
       - tmux
       - vim
-      - /tmp/rpms/kmods/kmod-hp-wmi*.rpm
+      - neovim
     remove:
       - fedora-workstation-repositories
       - firefox
@@ -81,5 +70,8 @@ modules:
       - com.google.AndroidStudio
       - dev.zed.Zed
       - app.devsuite.Ptyxis
+      - com.valvesoftware.Steam
+      - net.davidotek.pupgui2
+
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
