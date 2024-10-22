@@ -32,6 +32,7 @@ modules:
       - tmux
       - vim
       - neovim
+      - rclone
     remove:
       - fedora-workstation-repositories
       - firefox
