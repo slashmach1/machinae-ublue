@@ -33,6 +33,8 @@ modules:
       - vim
       - neovim
       - rclone
+      - rpmdevtools 
+      - akmods
       - hp-wmi/akmod-hp-wmi-0-0.10.x86_64.rpm
       - hp-wmi/hp-wmi-0-0.10.x86_64.rpm
       - hp-wmi/kmod-hp-wmi-0-0.10.x86_64.rpm
@@ -66,7 +68,6 @@ modules:
       - net.cozic.joplin_desktop
       - org.cryptomator.Cryptomator
       - net.rpcs3.RPCS3
-      - net.lutris.Lutris
       - com.plexamp.Plexamp
       - tv.plex.PlexDesktop
       - tv.plex.PlexHTPC
