@@ -33,6 +33,10 @@ modules:
       - vim
       - neovim
       - rclone
+      - akmod-hp-wmi-0-0.10.x86_64.rpm
+      - hp-wmi-0-0.10.x86_64.rpm
+      - kmod-hp-wmi-0-0.10.x86_64.rpm
+
     remove:
       - fedora-workstation-repositories
       - firefox
@@ -71,7 +75,6 @@ modules:
       - com.google.AndroidStudio
       - dev.zed.Zed
       - app.devsuite.Ptyxis
-      - com.valvesoftware.Steam
       - net.davidotek.pupgui2
 
 
