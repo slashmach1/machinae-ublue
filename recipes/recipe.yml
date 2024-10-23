@@ -33,9 +33,9 @@ modules:
       - vim
       - neovim
       - rclone
-      - akmod-hp-wmi-0-0.10.x86_64.rpm
-      - hp-wmi-0-0.10.x86_64.rpm
-      - kmod-hp-wmi-0-0.10.x86_64.rpm
+      - hp-wmi/akmod-hp-wmi-0-0.10.x86_64.rpm
+      - hp-wmi/hp-wmi-0-0.10.x86_64.rpm
+      - hp-wmi/kmod-hp-wmi-0-0.10.x86_64.rpm
 
     remove:
       - fedora-workstation-repositories
