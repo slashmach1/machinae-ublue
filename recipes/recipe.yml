@@ -18,12 +18,7 @@ modules:
   - type: rpm-ostree
     repos:
        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-       - https://copr.fedorainfracloud.org/coprs/yohane-shiro/wallpaper-engine-kde-plugin-qt6/repo/fedora-40/yohane-shiro-wallpaper-engine-kde-plugin-qt6-fedora-40.repo
     install:
-      - wallpaper-engine-kde-plugin-qt6
-      - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-40.noarch.rpm 
-      - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-40.noarch.rpm
-      - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - iwd
       - tailscale
       - wireguard-tools
@@ -34,8 +29,6 @@ modules:
       - android-tools
       - tmux
       - vim
-      - ffmpeg
-      - neovim
       - rpmdevtools 
       - akmods
       - hp-wmi/akmod-hp-wmi-0-0.10.x86_64.rpm
@@ -88,7 +81,7 @@ modules:
       - com.github.tchx84.Flatseal
       - it.mijorus.gearlever
       - io.github.dvlv.boxbuddyrs
-
-
+      - com.google.Chrome
+      - com.valvesoftware.Steam
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
