@@ -4,7 +4,7 @@ name: machinae-ublue
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/kinoite-nvidia
 image-version: 40 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -53,13 +53,14 @@ modules:
     install:
       - xone
       - xpadneo
-      - nvidia-open
       
   - type: systemd
     system:      
       enabled: 
       - dconf-update
       - hp-set-lighting
+      disabled:
+      - wpa_supplicant
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -83,6 +84,11 @@ modules:
       - app.devsuite.Ptyxis
       - net.davidotek.pupgui2
       - dev.lizardbyte.app.Sunshine
+      - net.lutris.Lutris
+      - com.github.tchx84.Flatseal
+      - it.mijorus.gearlever
+      - io.github.dvlv.boxbuddyrs
+
 
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
