@@ -58,6 +58,7 @@ modules:
     system:      
       enabled: 
       - dconf-update
+      - hp-set-lighting
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
