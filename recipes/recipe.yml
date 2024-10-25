@@ -80,6 +80,7 @@ modules:
       - dev.zed.Zed
       - app.devsuite.Ptyxis
       - net.davidotek.pupgui2
+      - dev.lizardbyte.app.Sunshine
 
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
