@@ -23,7 +23,7 @@ modules:
       - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - wallpaper-engine-kde-plugin-qt6
       - bootc
-      - iwd
+      - https://kojipkgs.fedoraproject.org//packages/iwd/3.0/1.fc41/x86_64/iwd-3.0-1.fc41.x86_64.rpm
       - tailscale
       - wireguard-tools
       - dnsmasq
