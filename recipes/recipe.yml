@@ -48,6 +48,9 @@ modules:
     install:
       - xone
       - xpadneo
+      - akmod-hp-wmi-0-0.10.x86_64.rpm
+      - hp-wmi-0-0.10.x86_64.rpm
+      - kmod-hp-wmi-0-0.10.x86_64.rpm
       
   - type: systemd
     system:      
