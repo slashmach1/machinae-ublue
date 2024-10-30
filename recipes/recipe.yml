@@ -21,7 +21,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/yohane-shiro/wallpaper-engine-kde-plugin-qt6/repo/fedora-41/yohane-shiro-wallpaper-engine-kde-plugin-qt6-fedora-41.repo
     install:
       - wallpaper-engine-kde-plugin-qt6
-      - bootc
+      - https://kojipkgs.fedoraproject.org//packages/iwd/3.0/1.fc41/x86_64/iwd-3.0-1.fc41.x86_64.rpm
       - iwd
       - tailscale
       - wireguard-tools
@@ -36,14 +36,17 @@ modules:
       - firefox
       - firefox-langpacks
 
+  - type: containerfile
+    snippets:
+    - RUN --mount=type=tmpfs,target=/tmp /tmp/scripts/build-kmod-hp-wmi.sh
+    containerfiles:
+      - hp-wmi
+
   - type: akmods
     base: main
     install:
       - xone
       - xpadneo
-      - akmod-hp-wmi-0-0.10.x86_64.rpm
-      - hp-wmi-0-0.10.x86_64.rpm
-      - kmod-hp-wmi-0-0.10.x86_64.rpm
       
   - type: systemd
     system:      
