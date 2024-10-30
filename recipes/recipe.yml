@@ -17,8 +17,8 @@ modules:
       
   - type: rpm-ostree
     repos:
-       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-       - https://copr.fedorainfracloud.org/coprs/yohane-shiro/wallpaper-engine-kde-plugin-qt6/repo/fedora-41/yohane-shiro-wallpaper-engine-kde-plugin-qt6-fedora-41.repo
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      - https://copr.fedorainfracloud.org/coprs/yohane-shiro/wallpaper-engine-kde-plugin-qt6/repo/fedora-41/yohane-shiro-wallpaper-engine-kde-plugin-qt6-fedora-41.repo
     install:
       - wallpaper-engine-kde-plugin-qt6
       - bootc
@@ -37,7 +37,6 @@ modules:
       - hp-wmi/akmod-hp-wmi-0-0.10.x86_64.rpm
       - hp-wmi/hp-wmi-0-0.10.x86_64.rpm
       - hp-wmi/kmod-hp-wmi-0-0.10.x86_64.rpm
-
     remove:
       - fedora-workstation-repositories
       - firefox
