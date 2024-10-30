@@ -5,4 +5,4 @@ Description=Load HP Module to set HP Lighting on Boot
 ExecStart=/usr/bin/hp-set-lighting
 
 [Install]
-WantedBy=multi.user.target
+WantedBy=multi-user.target
