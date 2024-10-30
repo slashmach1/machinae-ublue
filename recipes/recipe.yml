@@ -18,7 +18,10 @@ modules:
   - type: rpm-ostree
     repos:
        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+       - https://copr.fedorainfracloud.org/coprs/yohane-shiro/wallpaper-engine-kde-plugin-qt6/repo/fedora-41/yohane-shiro-wallpaper-engine-kde-plugin-qt6-fedora-41.repo
     install:
+      - wallpaper-engine-kde-plugin-qt6
+      - bootc
       - iwd
       - tailscale
       - wireguard-tools
