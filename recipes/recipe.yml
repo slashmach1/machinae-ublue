@@ -37,6 +37,7 @@ modules:
       - hp-wmi/akmod-hp-wmi-0-0.10.x86_64.rpm
       - hp-wmi/hp-wmi-0-0.10.x86_64.rpm
       - hp-wmi/kmod-hp-wmi-0-0.10.x86_64.rpm
+      - hp-wmi/akmods-keys-0.0.2-8.fc41.noarch.rpm
     remove:
       - fedora-workstation-repositories
       - firefox
