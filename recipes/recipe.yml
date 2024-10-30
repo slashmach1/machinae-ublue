@@ -23,7 +23,7 @@ modules:
       - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - wallpaper-engine-kde-plugin-qt6
       - bootc
-      - https://kojipkgs.fedoraproject.org//packages/iwd/3.0/1.fc41/x86_64/iwd-3.0-1.fc41.x86_64.rpm
+      - iwd
       - tailscale
       - wireguard-tools
       - dnsmasq
@@ -33,12 +33,6 @@ modules:
       - android-tools
       - tmux
       - vim
-      - rpmdevtools 
-      - akmods
-      - akmod-hp-wmi-0-0.10.x86_64.rpm
-      - hp-wmi-0-0.10.x86_64.rpm
-      - kmod-hp-wmi-0-0.10.x86_64.rpm
-      - akmods-keys-0.0.2-8.fc41.noarch.rpm
     remove:
       - firefox
       - firefox-langpacks
