@@ -20,7 +20,6 @@ modules:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       - https://copr.fedorainfracloud.org/coprs/yohane-shiro/wallpaper-engine-kde-plugin-qt6/repo/fedora-41/yohane-shiro-wallpaper-engine-kde-plugin-qt6-fedora-41.repo
     install:
-      - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - wallpaper-engine-kde-plugin-qt6
       - bootc
       - iwd
@@ -80,5 +79,6 @@ modules:
       - com.github.tchx84.Flatseal
       - it.mijorus.gearlever
       - io.github.dvlv.boxbuddyrs
+      - com.google.Chrome
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
