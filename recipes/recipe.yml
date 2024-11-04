@@ -37,6 +37,7 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
+      - wpa_supplicant
 
   - type: akmods
     base: main
@@ -48,8 +49,6 @@ modules:
     system:      
       enabled: 
       - dconf-update
-      disabled:
-      - wpa_supplicant
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
