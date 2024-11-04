@@ -21,6 +21,7 @@ modules:
     repos:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       - https://copr.fedorainfracloud.org/coprs/yohane-shiro/wallpaper-engine-kde-plugin-qt6/repo/fedora-41/yohane-shiro-wallpaper-engine-kde-plugin-qt6-fedora-41.repo
+      - https://copr.fedorainfracloud.org/coprs/chenxiaolong/sbctl/repo/fedora-41/chenxiaolong-sbctl-fedora-41.repo
     install:
       - wallpaper-engine-kde-plugin-qt6
       - https://kojipkgs.fedoraproject.org//packages/iwd/3.0/1.fc41/x86_64/iwd-3.0-1.fc41.x86_64.rpm
@@ -34,6 +35,7 @@ modules:
       - android-tools
       - tmux
       - vim
+      - sbctl
     remove:
       - firefox
       - firefox-langpacks
