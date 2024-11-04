@@ -37,7 +37,7 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-      
+
   - type: akmods
     base: main
     install:
@@ -48,7 +48,6 @@ modules:
     system:      
       enabled: 
       - dconf-update
-      - hp-set-lighting
       disabled:
       - wpa_supplicant
 
