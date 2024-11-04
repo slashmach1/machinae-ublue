@@ -22,7 +22,6 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/chenxiaolong/sbctl/repo/fedora-41/chenxiaolong-sbctl-fedora-41.repo
     install:
       - wallpaper-engine-kde-plugin-qt6
-      - https://kojipkgs.fedoraproject.org//packages/iwd/3.0/1.fc41/x86_64/iwd-3.0-1.fc41.x86_64.rpm
       - iwd
       - tailscale
       - wireguard-tools
