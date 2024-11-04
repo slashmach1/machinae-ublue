@@ -44,11 +44,6 @@ modules:
     install:
       - xone
       - xpadneo
-      
-  - type: systemd
-    system:      
-      enabled: 
-      - dconf-update
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -77,5 +72,6 @@ modules:
       - it.mijorus.gearlever
       - io.github.dvlv.boxbuddyrs
       - com.google.Chrome
+      - com.valvesoftware.Steam
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
